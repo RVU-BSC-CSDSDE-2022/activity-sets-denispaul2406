@@ -1,11 +1,19 @@
-// C program to find the area of a triangle using formula
-#include <stdio.h>
-void main() {
-  float base, height;
-  printf("Enter Base and Height: ");
-  scanf("%f %f", &base, &height);
-  float area = (base * height) / 2;
+#include<stdio.h>
 
-  // Area with precision of 6 decimal places
-  printf("Area of Triangle is %0.6f", area);
+void input(float *base, float *height){
+  printf("enter base and height of triangle");
+scanf("%f %f",base,height);
 }
+void find_area(float base , float height, float *area){
+  *area=(0.5)*base*height;
+}
+void output(float x, float y, float area){
+  printf("base %f height %f gives area %f",x,y,area);
+}
+int main(){
+  float base,height,area;
+  input(&base,&height);
+  find_area(base,height,&area);
+  output(base,height,area);
+}
+  
