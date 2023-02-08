@@ -58,7 +58,7 @@ void output(int n, Complex c[n], Complex result)
       printf("+%1.f+%1.fi", c[i].real, c[i].imaginary);
     }
   printf("=%1.f+%1.fi", result.real, result.imaginary);
-}
+}s
 int main() 
 {
   int n;
